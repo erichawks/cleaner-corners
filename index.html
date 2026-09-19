@@ -56,11 +56,11 @@
     .service h3{font-size:1.02rem;margin:10px 0 6px;color:var(--navy)}
     .service p{color:var(--muted);font-size:.92rem}
     .icon{width:36px;height:36px;border-radius:10px;display:grid;place-items:center;background:rgba(60,94,160,.12);color:var(--pink);font-size:1.1rem}
-    .hours-panel{margin-top:18px}
-    .hours-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:16px}
-    .hours-day{background:var(--wash);border:1px solid var(--line);border-radius:12px;padding:14px 12px}
-    .hours-day dt{font-weight:700;color:var(--navy);font-size:.86rem;margin-bottom:6px}
-    .hours-day dd{color:var(--muted);font-size:.86rem;line-height:1.35}
+    .reviews{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:8px}
+    .quote{background:var(--surface);border:1px solid var(--line);border-left:3px solid var(--teal);border-radius:0 16px 16px 0;padding:18px}
+    .quote p{color:var(--muted)}
+    .stars{display:flex;gap:2px;color:#f4b400;font-size:1.05rem;letter-spacing:1px;line-height:1;margin-bottom:10px}
+    .quote cite{display:block;margin-top:10px;color:var(--navy);font-style:normal;font-size:.86rem;font-weight:700}
     .split{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:18px}
     .note{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
     .note h3{font-family:Oswald,sans-serif;letter-spacing:.04em;margin-bottom:8px;color:var(--navy)}
@@ -74,8 +74,7 @@
     .foot-left{display:flex;flex-direction:column;gap:2px}
     .foot-copy{text-align:right;margin-left:auto}
     @media(max-width:860px){
-      .hero-grid,.services,.split,.cta-band{grid-template-columns:1fr}
-      .hours-grid{grid-template-columns:1fr 1fr}
+      .hero-grid,.services,.split,.reviews,.cta-band{grid-template-columns:1fr}
       .cta-band{flex-direction:column;align-items:flex-start}
       h1{font-size:2.2rem}
       .logo-mark img{height:72px;width:72px}
@@ -130,19 +129,34 @@
         <article class="service"><div class="icon">✓</div><h3>One-time or recurring</h3><p>Weekly, biweekly, monthly, or a single visit. Call for an estimate.</p></article>
       </div>
     </section>
-    <section class="wrap" id="hours">
-      <div class="card-panel hours-panel">
-        <h2 class="section-title" style="font-size:1.45rem;margin-bottom:0;font-weight:700">Hours</h2>
-        <p class="section-sub" style="margin:8px 0 0">From the Superpages listing. Confirm when you call.</p>
-        <dl class="hours-grid">
-          <div class="hours-day"><dt>Monday</dt><dd>7:00 a.m.–5:00 p.m.</dd></div>
-          <div class="hours-day"><dt>Tuesday</dt><dd>7:00 a.m.–5:00 p.m.</dd></div>
-          <div class="hours-day"><dt>Wednesday</dt><dd>7:00 a.m.–5:00 p.m.</dd></div>
-          <div class="hours-day"><dt>Thursday</dt><dd>7:00 a.m.–5:00 p.m.</dd></div>
-          <div class="hours-day"><dt>Friday</dt><dd>7:00 a.m.–5:00 p.m.</dd></div>
-          <div class="hours-day"><dt>Saturday</dt><dd>Call to confirm</dd></div>
-          <div class="hours-day"><dt>Sunday</dt><dd>Call to confirm</dd></div>
-        </dl>
+    <section class="wrap" id="reviews">
+      <h2 class="section-title">What customers say</h2>
+      <div class="reviews">
+        <blockquote class="quote">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>I’ve had a lot of dirty houses over the years - and not a lot of good Housecleaners. Katrina was beyond awesome and is one of the best! I look forward to having her hard and excellent work each week.</p>
+          <cite>Sharon Parker</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>The owners, Kimberly and Danny Ledford, are very good about addressing any issues you might have with any problems. There is little to complain about as they have a great group of cleaners. They are very thorough and you will have had a completely clean house when these cleaners are done.</p>
+          <cite>Nan Haygood</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>Such a wonderful experience. They were able to get me on the schedule fast and Carmen did an amazing job! My home was sparkling! I highly HIGHLY RECOMMEND cleaner corners.</p>
+          <cite>Brandy Hines</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>Working with Cleaner Corners was so easy. They are very communicative and efficient. After our first deep clean our doors, baseboards and trim looked brand new. I would definitely recommend.</p>
+          <cite>Brittney Jenkins</cite>
+        </blockquote>
+        <blockquote class="quote">
+          <div class="stars" aria-label="5 stars">★★★★★</div>
+          <p>When Clean Corners left the home it was spotless and spectacular! The final walk through went great with no complaints from the new owner. We will definitely use them again.</p>
+          <cite>Lindsey Yates</cite>
+        </blockquote>
       </div>
     </section>
     <div class="wrap">
