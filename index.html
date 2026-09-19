@@ -26,7 +26,9 @@
     .brand-name .word-signal{font-family:Oswald,sans-serif;font-weight:700;font-size:1.35rem;line-height:1.08;letter-spacing:.05em;color:var(--navy);text-transform:uppercase}
     .brand-name .word-meta{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;margin-top:6px}
     .brand-name .word-meta::before,.brand-name .word-meta::after{content:"";width:16px;height:2px;background:var(--pink);border-radius:2px}
-    .trust-line{color:var(--slate);font-size:.78rem;font-weight:600}
+    .fb-link{display:inline-flex;align-items:center;gap:8px;color:var(--navy);font-weight:700;flex:0 0 auto;white-space:nowrap}
+    .fb-link svg{width:18px;height:18px;fill:#1877F2;flex:0 0 auto}
+    .fb-link:hover{color:var(--teal)}
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:8px;padding:10px 16px;font-weight:600;font-size:.92rem;border:1px solid transparent;transition:.18s ease}
     .btn-gold{background:var(--bg);color:var(--ink)}
     .btn-gold:hover{background:#fff}
@@ -78,7 +80,7 @@
       h1{font-size:2.2rem}
       .logo-mark img{height:72px;width:72px}
       .brand-name .word-signal{font-size:1.02rem}
-      .trust-line{display:none}
+      .fb-link{font-size:.82rem}
     }
   </style>
 </head>
@@ -91,10 +93,13 @@
         </div>
         <div class="brand-name">
           <span class="word-signal">Cleaner Corners</span>
-          <span class="word-meta">Hixson, TN</span>
+          <span class="word-meta">Housekeeping since 2012</span>
         </div>
       </a>
-      <p class="trust-line">Housekeeping since 2012</p>
+      <a class="fb-link" href="https://www.facebook.com/" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047v-2.66c0-3.025 1.792-4.697 4.533-4.697 1.312 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.886v2.265h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z"/></svg>
+        Join us on Facebook
+      </a>
     </div>
   </header>
   <main id="top">
