@@ -21,7 +21,7 @@
     .nav{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:10px 0}
     .brand{display:flex;align-items:center;gap:14px;min-width:0}
     .logo-mark{line-height:0;flex:0 0 auto}
-    .logo-mark img{display:block;height:88px;width:88px;object-fit:contain;object-position:center;background:#fff}
+    .logo-mark img{display:block;height:96px;width:auto;max-width:168px;object-fit:contain;object-position:center;background:transparent}
     .brand-name{display:flex;flex-direction:column;align-items:center;text-align:center;min-width:0}
     .brand-name .word-signal{font-family:Oswald,sans-serif;font-weight:700;font-size:1.35rem;line-height:1.08;letter-spacing:.05em;color:var(--navy);text-transform:uppercase}
     .brand-name .word-meta{display:flex;align-items:center;justify-content:center;gap:8px;color:var(--muted);font-size:.7rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;white-space:nowrap;margin-top:6px}
@@ -30,8 +30,6 @@
     .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:8px;padding:10px 16px;font-weight:600;font-size:.92rem;border:1px solid transparent;transition:.18s ease}
     .btn-gold{background:var(--bg);color:var(--ink)}
     .btn-gold:hover{background:#fff}
-    .btn-ghost{background:transparent;color:#f3f7f6;border-color:rgba(243,247,246,.45)}
-    .btn-ghost:hover{border-color:#fff;color:#fff}
     .hero{padding:48px 0 40px}
     .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:36px;align-items:center}
     .eyebrow{color:var(--slate);font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:.76rem;margin-bottom:12px}
@@ -72,7 +70,7 @@
       .hours-grid{grid-template-columns:1fr 1fr}
       .cta-band{flex-direction:column;align-items:flex-start}
       h1{font-size:2.2rem}
-      .logo-mark img{height:64px;width:64px}
+      .logo-mark img{height:72px;width:auto;max-width:120px}
       .brand-name .word-signal{font-size:1.02rem}
       .trust-line{display:none}
     }
@@ -83,7 +81,7 @@
     <div class="wrap nav">
       <a class="brand" href="#top">
         <div class="logo-mark">
-          <img src="logo.jpg" width="88" height="88" alt="Cleaner Corners Housekeeping logo" />
+          <img src="logo.jpg" width="168" height="96" alt="Cleaner Corners Housekeeping logo" />
         </div>
         <div class="brand-name">
           <span class="word-signal">Cleaner Corners</span>
